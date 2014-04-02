@@ -1,4 +1,5 @@
 ﻿using System.ServiceModel.Activation;
+using WcfValidation.DataContract;
 using WcfValidation.Validation.Attributes;
 using WcfValidation.Validation.Framework;
 

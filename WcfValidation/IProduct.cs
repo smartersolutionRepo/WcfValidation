@@ -1,5 +1,6 @@
 using System.ServiceModel;
 using System.ServiceModel.Web;
+using WcfValidation.DataContract;
 
 namespace WcfValidation
 {

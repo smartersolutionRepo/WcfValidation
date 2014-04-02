@@ -23,7 +23,7 @@ namespace WcfValidation.Validation.Framework
             foreach (var parameterInfo in method.GetParameters())
             {
                 var validationAttribute = (from attributeType in parameterInfo.GetCustomAttributes(true)
-                                           where typeof(RestArgumentValidatorBase).IsAssignableFrom(attributeType.GetType())
+                                           where typeof(RestArgumentValidatorBase).IsInstanceOfType(attributeType)
                                            select attributeType).Cast<RestArgumentValidatorBase>().FirstOrDefault();
 
                 if(validationAttribute != null)

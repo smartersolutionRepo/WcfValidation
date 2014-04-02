@@ -1,4 +1,5 @@
 using FluentValidation;
+using WcfValidation.DataContract;
 
 namespace WcfValidation.Validation
 {
